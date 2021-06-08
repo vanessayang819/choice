@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  html,
+  body {
+    height: 100%;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  #input {
+    margin: 10px auto;
+    text-align: center;
+  }
+
+  .turntable-wrap {
+    position: relative;
+    overflow: hidden;
+    margin: 50px auto;
+    width: 340px;
+    height: 340px;
+    border: 7px solid #f5af19;
+    border-radius: 50%;
+    box-shadow: 0 0 5px #f5af19;
+  }
+
+  .turntable-wrap .light {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f0ddbe;
+  }
+
+  .turntable-wrap .turntable {
+    position: absolute;
+    margin: 20px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: #fff;
+  }
+
+  .turntable-wrap .turntable .choice {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: rotate(45deg);
+  }
+
+  .turntable-wrap .turntable .choice li {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 45%;
+    height: 45%;
+    transform-origin: right bottom;
+  }
+
+  .turntable-wrap .turntable .choice li span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    margin: auto;
+    transform: rotate(-45deg);
+    text-align: center;
+    color: black;
+    font-size: 1rem;
+  }
+
+
+  .turntable-wrap .pointer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,0%);
+		-moz-transform: translate(-50%,0%);
+		transform:translate(-50%,0%);
+    margin: -23px auto;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background: #fff;
+    border: 5px solid #f5af19;
+    color: #f5af19;
+    cursor: pointer;
+  }
+
+  .turntable-wrap .pointer:before {
+    content: '';
+    position: absolute;
+    top: -53px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 0;
+    border-style: solid;
+    border-color: transparent transparent #f5af19 transparent;
+    border-width: 25px 10px 25px 10px;
+  }
+
+  #result {
+    text-align: center;
+  }
+
+  #table{
+      text-align: center;
+  }
